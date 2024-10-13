@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import InputList from './components/InputList';
+import GroceryList from './components/GroceryList';
 
-function App() {
+const App = () => {
+  const [groceryItems, setGroceryItems] = useState([]);
+
+  const handleAddToGroceryList = (item) => {
+    setGroceryItems([...groceryItems, item]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>SmartShelf</h1>
+      <InputList onAddToGroceryList={handleAddToGroceryList} />
+      <GroceryList groceryItems={groceryItems} />
     </div>
   );
-}
+};
 
 export default App;
+
+

@@ -1,0 +1,148 @@
+@media (max-width: 600px) {
+  .item-list-container, .popup {
+    width: 90%; /* Full width on small screens */
+  }
+}
+ /* General Container Styles */
+.item-list-container, .popup {
+  background: rgb(255, 255, 255); /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  padding: 20px; /* Padding inside the box */
+  margin: 20px auto; /* Center with margin */
+  max-width: 400px; /* Max width for boxes */
+}
+
+.datepicker-input {
+  max-width: 150px; /* Set a maximum width for the date picker */
+  width: 100%; /* Allow it to take full width up to max */
+  padding: 10px; /* Padding inside the date picker */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 5px; /* Rounded corners */
+  margin-left: 10px; /* Space between input and date picker */
+  margin-top: 0; /* Remove top margin */
+}
+
+button {
+  background-color: #007bff; /* Primary color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Transition effect */
+  margin-top: 10px; /* Space above the button */
+  align-self: flex-start; /* Align button to the left */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* List Styles */
+ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+li {
+  padding: 10px 0; /* Space between items */
+  border-bottom: 1px solid #eee; /* Divider line */
+}
+
+li:last-child {
+  border-bottom: none; /* No border for last item */
+}
+
+/* Popup Styles */
+.popup {
+  position: fixed; /* Fixed positioning */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for center */
+  z-index: 1000; /* Above other elements */
+  width: 300px; /* Width of the popup */
+}
+
+/* Glow Effect */
+.glow-red {
+  color: red; /* Color for approaching expiration */
+  font-weight: bold; /* Bold text */
+}
+.fridge {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Distribute space between items */
+}
+.fridge-container {
+  max-width: 400px; /* Max width of the fridge */
+  margin: 20px auto; /* Center the fridge */
+  padding: 20px;
+  border: 2px solid #ccc; /* Border for fridge */
+  border-radius: 10px; /* Rounded corners */
+  background: #e8f1f5; /* Light fridge color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.fridge-item {
+  background: #fff; /* White background for items */
+  border: 1px solid #ccc; /* Border for items */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px;
+  margin: 5px 0; /* Space between items */
+  width: 100%; /* Full width of fridge */
+  text-align: left; /* Align text to the left */
+  flex: 1 1 calc(48% - 10px); /* Responsive item width */
+  margin: 5px; /* Space between items */
+  opacity: 0; /* Start invisible */
+  animation: fadeIn 0.5s forwards; /* Fade in effect */
+  transition: transform 0.2s, box-shadow 0.2s; /* Transition for effects */
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fridge-item:hover {
+  transform: scale(1.02); /* Slightly enlarge on hover */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Shadow on hover */
+}
+.input-form {
+  margin-bottom: 20px; /* Space below the form */
+  display: flex; /* Flex layout for form */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align elements to the start */
+}
+
+.input-group {
+  display: flex; /* Flex layout for input group */
+  justify-content: flex-start; /* Align items to the start */
+  margin-bottom: 10px; /* Space below input box */
+}
+
+.item-input {
+  max-width: 300px; /* Set a maximum width for the input */
+  width: 100%; /* Allow it to take full width up to max */
+  padding: 10px; /* Padding inside the input */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.datepicker-input {
+  max-width: 150px; /* Set a maximum width for the date picker */
+  width: 100%; /* Allow it to take full width up to max */
+  padding: 10px; /* Padding inside the date picker */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 5px; /* Rounded corners */
+  margin-top: 10px; /* Space above the date picker */
+}
+
+
+
+  
